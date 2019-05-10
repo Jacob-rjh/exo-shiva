@@ -157,7 +157,8 @@ p {
     font-weight: normal;
     line-height: 24px;
     color: #3e3e3e;
-    margin-bottom: 15px;
+    margin-bottom: 30px !important;
+    text-align: justify;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -2477,4 +2478,5 @@ button:focus {
     letter-spacing: 0.4px;
     line-height: 26px;
     margin: 0;
+    text-align: justify;
 }
