@@ -59959,5 +59959,8 @@ body .wpb_gallery_slides ul li {
     transform: rotateZ(90deg);
 }
 .google-map {
-    margin-left: 100px;
+        margin-top: 50px;
+    align-items: center;
+    display: flex;
+    align-self: center;
 }
