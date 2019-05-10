@@ -23703,6 +23703,7 @@ fieldset {
     min-width: 0;
     padding: 0;
     margin: 0;
+    margin-top:100px;
     border: 0;
 }
 
@@ -59956,4 +59957,7 @@ body .wpb_gallery_slides ul li {
     -webkit-transform: rotateZ(90deg);
     -moz-transform: rotateZ(90deg);
     transform: rotateZ(90deg);
+}
+.google-map {
+    margin-left: 100px;
 }
