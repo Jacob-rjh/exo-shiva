@@ -32,6 +32,13 @@
 *************************/
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900|Roboto+Slab:300,400,700|Open+Sans:300,300i,400,400i,600,700,800');
 
+::selection {
+    background: #ead65d !important;
+    color: #f8f8f8;
+	text-shadow: none;
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
@@ -150,6 +157,18 @@ li {
     margin-left: 19px;
     line-height: 25px;
     color: #ffffff;
+}
+
+
+ol{
+	margin:0;
+	padding:0;	
+	
+}
+ol li{
+	list-style-type:decimal !important;
+	color: #394856;
+	font-weight:900;
 }
 
 p {

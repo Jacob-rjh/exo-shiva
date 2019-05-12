@@ -1,0 +1,137 @@
+	<form method='POST' action="/destinationURL">
+  <div class="formField">
+    <div class="newsletter-success">
+      <div class="spinner">
+        <i class="fa fa-check"></i>
+      </div>
+    </div>
+    <div>
+      <input class="formInput" name="name" placeholder="Nom" type="text">
+      <input class="formInput" name="email" placeholder="Email*" type="email" required="">
+      <button class="button" type="submit">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+<style>
+$background-color: #3E92CC;
+$main-color: #011627;
+$secondary-color: #FF6B6B;
+$text-color: #FDFFFC;
+
+* {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.spinner {
+  border: 1px dashed #FFF;
+  border-radius: 100%;
+  width: 4em;
+  height: 4em;
+  margin: auto;
+  // text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+i.fa-check {
+  display: none;
+  align-self: center;
+}
+
+form {
+  display: flex;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.formField {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.formInput {
+  background: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 30px 20px;
+  outline: none;
+}
+
+.formInput:first-child {
+  border-bottom: 1px solid lighten;
+}
+
+.formInput::placeholder {
+  color: #9EA39E;
+}
+
+button[type='submit'] {
+    width: 100%;
+    border: none;
+    color: $text-color;
+    padding: 18px 0;
+    cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: lighten(red, 10);
+}
+
+.newsletter-success {
+  padding: 50px 0;
+  display: none;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }  
+}
+</style>
+<script>
+  
+$('form').submit( function(e) {
+  e.preventDefault();
+  // Display name of user along with thank you message
+  let name = $('.formInput[name="name"]').val();
+  let message = "Merci pour votre inscription!"
+  // Add a user's name if they've inputted it
+  if (name!=="") {
+    message = "Merci pour votre inscription, " + name + "!";  
+  }
+  // Fade out the main form elements upon the initial submit
+  $('.formInput').fadeOut(500);
+  $('button[type="submit"]').fadeOut(500, () => {
+    // Fade in the spinner component
+    $('.newsletter-success').fadeIn(500);
+    // Start the spinner animation
+    $(".spinner").css({
+       'animation': 'spinner 2s 0s linear'
+     });
+    // Actions performed once spinner has finished spinning
+    setTimeout( () => {
+      // Fade the checkmark into the spinner
+      $('i.fa-check').fadeIn(500, () => {
+        // Wait 500ms
+        setTimeout( () => {
+          // Fade the spinner and checkmark out
+          $('.spinner').fadeOut(500, () => {
+          // Append the message and fade it in
+            $(".newsletter-success").append($('<p>').text(message).fadeIn(500));
+          });
+        }, 500)
+      }); 
+    }, 2200);
+  });
+});
+
+</script>
