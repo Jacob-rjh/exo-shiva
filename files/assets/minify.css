@@ -39734,6 +39734,13 @@ option.wpb_video {
 .wpb_text_column:last-child,
 .wpb_text_column p:last-child {
     margin-bottom: 0;
+	text-align:justify;
+	line-height: 1.9em;
+}
+
+.story-details p {
+	text-align:justify;
+	    line-height: 1.9em;
 }
 
 .vc_message_box-icon,
@@ -59978,6 +59985,7 @@ li {
     margin-left: 19px;
     line-height: 25px;
     color: #ffffff;
+}
 
 .story-details-top > p, .story-details-bottom > p, .goal-wrapper.mb-30 > p {
     color: #666;
@@ -59985,3 +59993,4 @@ li {
     line-height: 26px;
     margin: 0;
     text-align: justify;
+}
