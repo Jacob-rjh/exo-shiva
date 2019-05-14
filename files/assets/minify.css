@@ -59962,7 +59962,12 @@ body .wpb_gallery_slides ul li {
 }
 .google-map {
         margin-top: 50px;
-    align-items: center;
-    display: flex;
-    align-self: center;
+        margin-left: 20%;
+}
+.pt-205 {
+    padding-top: 160px;
+}
+
+.pb-210 {
+    padding-bottom: 193px;
 }
