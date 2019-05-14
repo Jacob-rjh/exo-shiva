@@ -77,6 +77,8 @@ a:focus,
     outline: none;
 }
 
+.black-link,  .black-link:visited{color:#00457b !important}
+
 a:focus,
 a:hover {
     color: #050035;
@@ -165,10 +167,16 @@ ol{
 	padding:0;	
 	
 }
-ol li{
+ol > li{
 	list-style-type:decimal !important;
 	color: #394856;
 	font-weight:900;
+}
+
+.dott > li{
+	list-style:circle;
+	color:black;
+	margin-left:40px;
 }
 
 p {
@@ -176,7 +184,6 @@ p {
     font-weight: normal;
     line-height: 24px;
     color: #3e3e3e;
-    margin-bottom: 30px !important;
     text-align: justify;
     font-family: 'Poppins', sans-serif;
 }
