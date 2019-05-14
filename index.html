@@ -118,9 +118,6 @@
                                         </li>
                                         <li class="li-top-item left" style="float: left">
 </li>
-                                        <li class="li-top-item left" style="float: left">
-                                            <a class="a-top-link" href="pages/contact-us.html">Nous contacter</a>
-                                        </li>
                                     </ul>
                                 </div>
                                 <div class="oc-menu mobile-menu hidden-lg" id="oc-menu-mheader">
@@ -151,24 +148,6 @@
                                 </div>
                                 <!-- end menu area -->                                 
                             </div>
-                            <div class="box box-right">
-                                <div id="search" class="input-group">
-                                    <div class="btn-group">
-                                        <div class="search-button" data-toggle="dropdown"></div>
-                                        <div class="dropdown-menu search-content">
-                                            <button class="button-close">
-                                                <i class="ion-ios-close-empty"></i>
-                                            </button>
-                                            <div class="container">
-                                                <div class="inner">
-                                                    <input class="form-control input-lg" id="text-search" type="text" name="q" value="" placeholder="Rechercher..." aria-label="Search entire store here..."/>
-                                                    <span class="input-group-btn"> <button type="button" class="btn btn-default btn-lg"></button> </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="clearfix"></div>
                         </div>
                     </div>
@@ -189,10 +168,10 @@
 	  e.preventDefault();
 	  // Display name of user along with thank you message
 	  let name = $('.formInput[name="name"]').val();
-	  let message = "Merci pour votre inscription!"
+	  let message = "Merci pour votre message!"
 	  // Add a user's name if they've inputted it
 	  if (name!=="") {
-		message = "Merci pour votre inscription, " + name + "!";  
+		message = "Merci pour votre message, " + name + "! Nous vous répondrons dans le meilleur délais" ;  
 	  }
 	  // Fade out the main form elements upon the initial submit
 	  $('.formInput').fadeOut(500);
@@ -220,43 +199,6 @@
 	  });
 	});
 
-	  
-    /*--------------------------
-    Newsletter Popup Js 
----------------------------- */ 
-    $("#newsletter-popup-conatiner").mouseup(function(e){
-      var popContainer = $("#newsletter-popup-conatiner");
-      var newsLatterPop = $("#newsletter-pop-up"); 
-      if(e.target.id != newsLatterPop.attr('id') && !newsLatterPop.has(e.target).length)
-      {
-        popContainer.fadeOut();
-      }
-    });
-    $('.hide-popup').on("click", function(){
-      var popContainer = $("#newsletter-popup-conatiner");
-      $('#newsletter-popup-conatiner')
-      {
-        popContainer.fadeOut();
-      }
-    });
-
-    $('#dont_show').on("click", function(){
-      $.cookie('popup_cookie', 'pclosed', {
-        expires: 3,
-        path: '/'
-      });
-      $('.hide-popup').trigger('click');
-    });
-    // console.log($.cookie('popup_cookie'));
-
-    
-    if($.cookie('popup_cookie') == 'pclosed') {
-      $('.hide-popup').trigger('click');
-    }
-	
-	
-    
-
   });
 </script>
             </div>
@@ -277,6 +219,7 @@
                                                         <div id="oc-inivoslider1" class="nivoSlider slides static_video">
                                                             <img style="display: none;" src="files/image/slider2-elomus1-1920x900_1920x9005390.jpg?v=1533173106" alt="" title="#banner7-caption1"/>
                                                             <img style="display: none;" src="files/image/slider1-elomus1-1920x900_1920x900007d.jpg?v=1533173150" alt="" title="#banner7-caption2"/>
+                                                            <img style="display: none;" src="files/image/slider2-elomus1-1920x900_1920.jpg" alt="" title="#banner7-caption3"/>
                                                         </div>
                                                         <div id="banner7-caption1" class="banner7-caption nivo-html-caption nivo-caption move-slides-effect" data-class="slide-movetype">
                                                             <div class="timeloading"></div>
@@ -303,7 +246,7 @@
                                                                         <p style="color:#ffffff; "> Ergosanté distribue sur tout le territoire national</p>
                                                                     </div>
                                                                     <div class="banner7-readmore">
-                                                                        <a class="btn" href="pages/offre.html" style="border-color:#ffffff !important;color:#ffffff !important;" onmouseover="this.style='background-color:#ffffff !important;';" onmouseout="this.style='color:#ffffff !important;border-color:#ffffff !important';">Voir le produit</a> 
+                                                                        <a class="btn" href="pages/shivaexo.html" style="border-color:#ffffff !important;color:#ffffff !important;" onmouseover="this.style='background-color:#ffffff !important;';" onmouseout="this.style='color:#ffffff !important;border-color:#ffffff !important';">Voir le produit</a> 
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -343,144 +286,83 @@
                         </div>
                     </div>
                 </div>
-                <div id="section-1533706774589" class="index-section1 index-section--flush">
-                    <div class="main-row full-width" data-section-id="1533706774589">
+                <div id="shopify-section-1504781997946" class="shopify-section">
+                    <div class="main-row   layer-background  " data-section-id="1504781997946">
                         <div class="container">
                             <div class="row">
-                                            <div class="main-row " data-section-id="1534421806330">
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="main-col col-sm-12 col-md-12">
-                                                            <div class="row sub-row">
-                                                                <div class="sub-col col-sm-12 col-md-12">
-                                                                    <div class="banner-static static3-elomus1">
-                                                                        <div class="row">
-                                                                            <div class="col col-sm-6 col-xs-12">
-                                                                                <div class="text-content">
-                                                                                    <h3>SHIVA EXO</h3>
-																					<div class="col col-md-2 col-sm-6 col-xs-12 center">
-																						<div class="box box1">
-																							<img src="files/image/return_back_if_error20ca.png?v=1533603349" alt="">
-																							
-																						</div>
-																					</div>
-																					<div class="col col-md-6 col-sm-6 col-xs-12">
-																						<div class="box box1">
-																						<h4>Adaptable</h4>
-																							<div class="box box2">à toutes les morphologies (plus de 90% de la population mondiale ; du 5e percentile femme au 95e percentile homme)</div>
-																						</div>
-																					</div>
-																					
-                                                                                </div>
-                                                                                <div class="text-content">
-																					<div class="col col-md-2 col-sm-6 col-xs-12 center">
-																						<div class="box box1">
-																							 <p><img src="files/image/drone_rotate_360a219.png" alt=""></p>
-																						</div>
-																					</div>
-																					<div class="col col-md-6 col-sm-6 col-xs-12">
-																						<div class="box box1">
-																						<h4>Passif et simple</h4>
-																							<div class="box box2">entièrement mécanique, vous n’avez donc pas de batterie à recharger - et doté d’une maintenance simplifiée</div>
-																						</div>
-																					</div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col col-sm-6 hidden-xs">
-                                                                                <a href="pages/shivaexo.html"><div class="image">
-                                                                                    
-                                                                                </div></a>
-                                                                            </div>
-                                                                            <div class="col hidden-lg hidden-sm col-xs-12">
-                                                                                 <a href="pages/shivaexo.html"><img src="files/image/sncf-3.jpg"/>  </a> 
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                <div class="main-col col-sm-12 col-md-12">
+                                    <div class="row sub-row">
+                                        <div class="sub-col col-sm-12 col-md-12">
+                                            <!--Service Area Start-->
+                                            <div class="static1-elomus1">
+                                                <div class="row">
+                                                    <div class="col col-md-3 col-sm-6 col-xs-12">
+                                                        <div class="box box1">
+                                                            <img src="files/image/return_back_if_error20ca.png?v=1533603349" alt="">
+                                                            <h4>Adaptable</h4>
+                                                            <div class="box box2">à toutes les morphologies (plus de 90% de la population mondiale ; du 5e percentile femme au 95e percentile homme)</div>
                                                         </div>
-                                                    </div>                                                     
+                                                    </div>
+                                                    <div class="col col-md-3 col-sm-6 col-xs-12">
+                                                        <div class="box box2">
+                                                            <p><img src="files/image/drone_rotate_360a219.png" alt=""></p>
+                                                            <h4>Passif et simple</h4>
+                                                            <div class="box box3">entièrement mécanique, vous n’avez donc pas de batterie à recharger - et doté d’une maintenance simplifiée</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col col-md-3 col-sm-6 col-xs-12">
+                                                        <div class="box box3">
+                                                            <p><img src="files/image/hdmi_connect_b00a5bc7-e202-4b35-bf90-534e48ea97fdac8d.png" alt=""></p>
+                                                            <h4> Préventif </h4>
+                                                            <div class="box box3">en effet, le poids et les contraintes mécaniques supportés par l’exosquelette ne passent plus par les épaules et le dos. Elles sont directement redirigées sur les hanches</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col col-md-3 col-sm-6 col-xs-12">
+                                                        <div class="box box4">
+                                                            <p><img src="files/image/high_battery_393941be-6fa4-48b5-bc37-dea5252fb748182e.png" alt=""></p>
+                                                            <h4> Modulable</h4>
+                                                            <div class="box box4">(possibilité de n’utiliser que la partie posturale, que les bras ou le système complet)</div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <!--End of Service Area-->
+                                        </div>
+                                    </div>
+                                </div>
                             </div>                             
                         </div>
-                    </div>                     
+                    </div>
                 </div>
-                <div id="section-1533706774589" class="index-section2 index-section--flush">
-                    <div class="main-row full-width" data-section-id="1533706774589">
-                        <div class="container">
-                            <div class="row">
-								<div class="main-row " data-section-id="1534421806330">
-									<div class="container">
-										<div class="row">
-											<div class="main-col col-sm-12 col-md-12">
-												<div class="row sub-row">
-													<div class="sub-col col-sm-12 col-md-12">
-														<div class="banner-static static3-elomus1">
-															<div class="row">
-																<div class="col col-md-4 col col-sm-6 hidden-xs">
-																	<a href="pages/shivaexo.html"><div class="image">
-																	</div></a>
-																</div>
-																
-																<div class="col col-md-8 col-sm-6 col-xs-12">
-																	<div class="row text-content">
-																		<div class="col col-md-2 col-sm-6 col-xs-12">
-																			<div class="box box1">
-																				<img src="files/image/hdmi_connect_b00a5bc7-e202-4b35-bf90-534e48ea97fdac8d.png" alt="">
-																				
-																			</div>
-																		</div>
-																		<div class="col col-md-10 col-sm-6 col-xs-12">
-																			<div class="box box1">
-																			<h4>Préventif</h4>
-																				<div class="box box2">en effet, le poids et les contraintes mécaniques supportés par l’exosquelette ne passent plus par les épaules et le dos. Elles sont directement redirigées sur les hanches</div>
-																			</div>
-																		</div>
-																		
-																	</div>
-																  <div class="row text-content">
-																		<div class="col col-md-2 col-sm-6 col-xs-12">
-																			<div class="box box1">
-																				 <p><img src="files/image/high_battery_393941be-6fa4-48b5-bc37-dea5252fb748182e.png" alt=""></p>
-																				
-																			</div>
-																		</div>
-																		<div class="col col-md-8 col-sm-6 col-xs-12">
-																			<div class="box box1">
-																			<h4>Modulable</h4>
-																				<div class="box box2">(possibilité de n’utiliser que la partie posturale, que les bras ou le système complet)</div>
-																			</div>
-																	</div>
-																	
-																		
-																		<div class="col hidden-lg hidden-sm col-xs-12 margin50">
-																			 <a href="pages/shivaexo.html"><img src="files/image/sncf-1.jpg"/>  </a> 
-																		</div>
-																		
-																		<a href="pages/shivaexo.html" class="link">Voir le produit</a>
-																	</div> 
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>                                                     
-									</div>
+				<div class="choose-area margin50">
+                <div class="container">
+                    <div class="about-section">
+                    </div>
+						<div class="banner-static static3-elomus1">
+						<div class="row">
+							<div class="col col-sm-6 col-xs-12">
+								<div class="text-content">
+									<h3>SHIVA EXO</h3>
+									<p>À ressorts en fibre de verre : plus léger, plus fiable, plus endurant que les ressorts en acier, permet une poussée isoélastique des bras (effort constant sur toute la plage angulaire d’utilisation du bras)</p>
+								 <a href="pages/shivaexo.html" class="link">voir le produit</a>
 								</div>
-                            </div>                             
-                        </div>
-                    </div>                     
+							</div>
+							<div class="col col-sm-6 col-xs-12">
+								<div class="image">
+										<img src="files/image/sncf-1.jpg" alt="bras_face">
+								</div>
+							</div>
+						</div>
+					</div>
                 </div>
+            </div>
 				
-				
-                                            <div class="banner-static static2-elomus1">
-                                                <div class="banner-text">
-                                                    <p>Profiter de nos services</p>
-                                                    <a href="pages/offre.html">Voir notre offre</a>
-                                                </div>
-                                            </div>
+				 <div class="banner-static static2-elomus1">
+					<div class="banner-text">
+						<p>Découvrez tous nos produits</p>
+						<a href="https://ergosante.fr">en savoir plus</a>
+					</div>
+				</div>
                
                 <div id="shopify-section-1534713161958" class="shopify-section">
                     <div class="row-1534713161958 full-width" data-section-id="1534713161958">
@@ -546,11 +428,9 @@
                             </div>
                             <div class="col-md-6 col-footer">
                                 <div class="footer-title">
-                                    <h5>S'inscrire à la newsletter</h5>
-                                </div>
-                                <p>Entrez votre adresse e-mail et recevez notre actualité
-                                </p>
-									<form method='POST' id="newsletter_form" action="mailto:rado.jacob.rjh@gmail.com?subject=inscrption à la newsletter&body=test">
+                                    <h5>Laisser nous un message</h5>
+                                </div>	
+									<form method='POST' id="newsletter_form" action="mailto:rado.jacob.rjh@gmail.com">
 									  <div class="formField">
 										<div class="newsletter-success">
 										  <div class="spinner">
@@ -558,11 +438,10 @@
 										  </div>
 										</div>
 										<div>
-										  <input class="formInput" name="name" placeholder="Nom" type="text">
-										    <div class="box1" style="height:100px; display:inline-block; position:relative;width:100%">
-										  <input class="formInput" name="email" placeholder="Email*" type="email" required="">
-										<button class="button submitNewsletter" type="submit">s'inscrire</button>
-										 </div>
+												<input class="formInput" name="name" placeholder="Nom" type="text">
+												<input class="formInput" name="email" placeholder="Email*" type="email" required="">
+                                            <textarea class="formInput form-control" rows="5" id="contactFormMessage" name="contact[body]" placeholder="Message" required=""></textarea>
+											<button class="button submitNewsletter" type="submit">envoyer</button>
 										</div>
 									  </div>
 									</form>
@@ -571,12 +450,12 @@
                     </div>
                 </div>
             </div>
-			<p class="center"><a href="pages/privacy.html">Mentions légales</a></p>
             <div class="footer-bottom">
                 <div class="container">
                     <div class="container-inner">
                         <div class="footer-copyright">
                             <p><span>Copyright © 2019  <a href="https://www.ergosante.com/">Ergo Santé</a> All rights reserved.</span></p>
+							<p><a href="pages/privacy.html">Politiques de confidentialité</a></p>
                         </div>
                         <div class="follow">
                             <label>Follow Us</label>
@@ -624,7 +503,7 @@
 </script>
         <!--End of Footer-->
     </div>
-    <!--Newsletter Popup Start-->
+    <!--Newsletter Popup Start
     <div id="newsletter-popup-conatiner">
         <div id="newsletter-pop-up" style="background:#fff;text-align:center;">
             <span class="hide-popup">X</span>
@@ -653,14 +532,13 @@
 									</form>
                    
                 </div>
-                    <!-- /#frm_subscribe -->
                 <div class="subscribe-bottom">
                     <input type="checkbox" id="dont_show" name="dont_show">
                     <label for="dont_show">Ne plus montrer ce message</label>
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!--End of Newsletter Popup-->
     <script src="ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" type="text/javascript"></script>     
     <script src="files/assets/fastclick.mincfcd.js?0" type="text/javascript"></script>

@@ -1,5 +1,4 @@
 
-
 .parallax-block.bt-advance-parallax {
     overflow: hidden;
     margin: auto;
@@ -11409,7 +11408,6 @@ a img.aligncenter {
     color: #f4f4f4;
     display: inline-block;
     font-size: 12px;
-    text-transform: uppercase;
     font-weight: 900;
 }
 
@@ -20665,7 +20663,7 @@ body:not(.index-white) .wpcf7-form textarea,
 .price-table-text {
     height: auto;
     padding-bottom: 26px;
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .evose_repeat_header .ri_nav {
@@ -59926,6 +59924,10 @@ body .wpb_gallery_slides ul li {
     vertical-align: middle;
 }
 
+ .grey {
+	background: #efefef;
+}
+
 .all-causes {
 }
 
@@ -59939,9 +59941,11 @@ body .wpb_gallery_slides ul li {
 }
 
 .choose-banner-wrapper {
-    overflow: hidden;
-    height: 369px;
+        overflow: hidden;
+		width:100%;
+		height:100%;
     background-position: center top;
+    background-size: cover;
 }
 
 .modern {
