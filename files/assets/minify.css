@@ -59971,3 +59971,17 @@ body .wpb_gallery_slides ul li {
 .pb-210 {
     padding-bottom: 193px;
 }
+
+li {
+    list-style: none;
+    margin-bottom: 17px;
+    margin-left: 19px;
+    line-height: 25px;
+    color: #ffffff;
+
+.story-details-top > p, .story-details-bottom > p, .goal-wrapper.mb-30 > p {
+    color: #666;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+    margin: 0;
+    text-align: justify;
