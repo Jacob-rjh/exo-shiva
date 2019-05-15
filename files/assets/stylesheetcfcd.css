@@ -1696,7 +1696,7 @@ header .btn-group .dropdown-menu .item-selected {
 
 .static2-elomus1 .banner-text a:hover {
     color: #76828e;
-    background: #fff;
+    background: #ead65d;
 }
 
 .static2-elomus2 {
@@ -1882,7 +1882,6 @@ header .btn-group .dropdown-menu .item-selected {
     font-size: 13px;
     line-height: 24px;
     color: #7e7e7e;
-	text-align:justify;
 }
 
 .static3-elomus1 .text-content .box-options {
@@ -4473,6 +4472,9 @@ footer .col-footer {
 .footer-contact li:last-child {
     margin-bottom: 0;
 }
+.footer-contact li.website:before {
+    content:"\e600";
+}
 
 .footer-contact li:before {
     content: "\e6ab";
@@ -6988,6 +6990,10 @@ height: 500px;
 	color: grey;
 }
 
+.text-content .right h4 p{
+	text-align:right !important;
+}
+
 .center {
 	text-align:center;
 }
@@ -7081,6 +7087,38 @@ height: 500px;
 
 #parallax-block-1239 .parallax-block-content.out-pos {
     transition: all 0.5s ease 0.9s;
+}
+
+.miniatures-ergosante:first-child{
+	    margin: 0;
+}
+.miniatures-ergosante{
+	border-radius:100%;
+	    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+.static4 .text-content{
+	    font-size: 13px;
+    line-height: 24px;
+    padding: 30px 0;
+}
+.static4{
+	padding: 30px 0;
+	
+}
+
+.static4 .right{
+	text-align:right;
+}
+.static2-elomus1 .banner-text:hover{
+	-webkit-transition: all 900ms ease-in-out;
+    -moz-transition: all 000ms ease-in-out;
+    -ms-transition: all 900ms ease-in-out;
+    -o-transition: all 900ms ease-in-out;
+    transition: all 900ms ease-in-out;
+	background-color:#688099;
+}
 
 
 
